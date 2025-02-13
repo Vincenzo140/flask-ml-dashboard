@@ -7,7 +7,7 @@ logger = AppLogger().get_logger()
 
 app = create_app()
 
-app.run(debug=True, host=Config.HOST, port=Config.PORT)
+app.run(host=Config.HOST, port=Config.PORT)
     
     
     
