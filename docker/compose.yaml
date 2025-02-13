@@ -1,0 +1,10 @@
+services:
+  backend:
+    build:
+      context: ../backend
+      dockerfile: Dockerfile
+    container_name: flask-app
+    command: python main.py
+    ports:
+      - "8000:8000"
+    restart: always
